@@ -58,7 +58,7 @@ Please put your work on github or bitbucket.
     }
     
     
-    Response
+    Response:
     {
         "message": "Customer created...",
         "customerId": 1,
@@ -79,7 +79,7 @@ Please put your work on github or bitbucket.
        "amount": 99.38
     }
     
-    Response
+    Response:
     {
         "message": "Account created ...",
         "accountId": 121,
@@ -91,7 +91,7 @@ Please put your work on github or bitbucket.
     }
     
     
-   <h4> Transaction </h4>
+   <h4> Transfer Fund </h4>
   
     Request:  http://localhost:8080/transaction/execute
     {
@@ -100,7 +100,7 @@ Please put your work on github or bitbucket.
       "amount": 10.38
     }
     
-    Response
+    Response:
     {
        "message": "Transaction successfully completed...",
        "transactionId": 142,
