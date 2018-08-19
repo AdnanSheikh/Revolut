@@ -1,7 +1,7 @@
 
 # Fund Transfer Rest API
 
-Java RESTful API for transfer money between users account in multi-currencies. Currency conversion applied before transaction in different currency accounts.
+Java RESTful API for transfer fund between users account in multi-currencies. Currency conversion is applied before transfer fund between different currency amount.
 
 <h1>Problem Statement</h1>
 
@@ -26,8 +26,8 @@ Please put your work on github or bitbucket.
  - H2/ SQLLite in-memory database (Configurable) 
  - Jetty container
  - JAX-RS API
+ - Jackson
  - Apache HTTP Client (for tests)
- - Jackson 
  - Maven 
  - SLF4J 
  
@@ -35,7 +35,18 @@ Please put your work on github or bitbucket.
  
     mvn clean install exec:java
     
- <h2> Sample Json Request </h2>
+ <h2>Service Supported</h2>
+ 
+| Service Name | Http Method | URL | Description |
+| ------ | ------ | ------ | ------ |
+| Create Customer  |  POST | http://localhost:8080/customer/create | Create new customer |
+| Fetch Customer  |  GET | http://localhost:8080/customer/{#customerid} | Fetch existing customer using customer id |
+| Create Account  |  POST | http://localhost:8080/account/create | Create new account |
+| Fetch Account  |  GET | http://localhost:8080/account/{#accountid} | Fetch existing account using account id |
+| Transfer Fund   |  POST | http://localhost:8080/transaction/create | Create new customer |
+| Fetch Transaction  |  GET | http://localhost:8080/transaction/{#transactionid} | Fetch existing transaction using transaction id |
+     
+ <h2> Sample Json Request/ Response </h2>
  
  <h4> Customer creation</h4>
  
