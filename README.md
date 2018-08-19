@@ -96,6 +96,6 @@ Please put your work on github or bitbucket.
        "transaction": {
            "fromAccountId": 123,
            "toAccountId": 243,
-           "amount": 10.38,
+           "amount": 10.38
         }
     }
