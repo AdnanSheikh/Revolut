@@ -1,7 +1,7 @@
 
 # Fund Transfer Rest API
 
-Java RESTful API for transfer fund between users account in multi-currencies. Currency conversion is applied before transfer fund between different currency amount.
+Java RESTful API for transfer fund between users account in multi-currencies. Currency conversion is applied before transfer fund between different currency accounts.
 
 <h1>Problem Statement</h1>
 
